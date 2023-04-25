@@ -1,0 +1,184 @@
+
+.order-form{
+    display: grid;
+
+}
+
+.order-similar{
+margin: 20px;
+width: 100%;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.location *{
+    margin: 0 10px;
+}
+.oreder-heading{
+    color: #424242;
+    font-weight: 600;
+    padding: 10px 0;
+
+}
+
+select::placeholder{
+   text-align: left;
+}
+input, .input{
+    margin: 10px auto;
+    width: 100%;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+input::placeholder, .input::placeholder{
+text-align: left;
+}
+
+.small-txt{
+    color: #424242;
+    font-size: 0.7em;
+}
+
+.whom-order div:last-child{
+  display: flex;
+  align-items: center;
+}
+.new{
+    width: fit-content;
+    margin: 10px 5px;
+}
+
+.payment-order div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.pay-inp{
+    appearance: none;
+    -webkit-appearance: none;
+   width: fit-content;
+    margin: 10px 5px;
+    border-radius: 50%;
+    border: 1px solid linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+    background: white;
+   
+    
+}
+input[type="radio"].pay-inp:checked{
+    background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+}
+
+.summ-order{
+    background:rgba(250, 249, 249, 1);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.summ-order div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.pr-order, .pr-delivery, .pr-bonus{
+    color: #424242;
+    font-weight: 600;
+    padding: 2px;
+}
+
+.pr-txt-order{
+    
+    padding-top: 15px;
+    
+}
+.pr-txt-order p{
+    color:rgba(66, 66, 66, 1);
+    font-size: 0.9em;
+}
+
+.bonus p, .bonus span{
+    background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+
+font-weight: 600;
+font-size: 1em;
+}
+
+.promocod{
+    padding: 10px 0;
+}
+.bonusup{
+    background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+    font-weight: 600;
+    font-size: 1em;
+}
+.promocod a{
+    color: #BDBDBD;
+    text-decoration: underline;
+}
+
+.pr-end p, .pr-end span{
+    color: #424242;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+
+.pr-btn{
+    margin: 15px 10px 15px 0px;
+}
+
+.btn-up{
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 564px){
+   
+}
+
+
+@media screen and (min-width: 810px){
+    
+
+}
+
+@media screen and (min-width: 960px){
+    
+}
+
+@media screen and (min-width: 1200px){
+   .order-form{
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+   }
+
+   .order-left{
+    grid-column: 1/2;
+    
+   }
+
+
+   .summ-order{
+    grid-column: 2/3;
+    width: fit-content;
+    margin-left: 20px;
+    height: fit-content;
+   }
+
+   .cat-nav-order{
+    margin-top: 45px;
+   }
+}

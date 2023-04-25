@@ -1,0 +1,272 @@
+.item{
+    background:  rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 30px rgba(68, 68, 68, 0.05);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    padding: 20px;
+}
+
+.item-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.itemIMG{
+    max-width: 60%;
+}
+
+.text-container{
+    margin: 30px 0;
+}
+
+.heading{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #424242;
+    text-align: center;
+    margin: 8px 0;
+}
+
+.comments{
+    margin: 20px 0;
+    position: relative;
+}
+
+.item-img-arrow-left{
+    position: absolute;
+    left: -6.5%;
+    top: 51%;
+    min-height: 6%;
+    height: 20px;
+    
+    
+}
+
+.item-img-arrow-right{
+    position: absolute;
+    right: -6.5%;
+    top: 51%;
+    min-height: 6%;
+    height: 20px;
+}
+
+
+
+.comments-li{
+    margin: 0 10px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 15px;
+    background: rgba(250, 249, 249, 1);
+    border-radius: 20px;
+    border: 1px solid rgba(189, 189, 189, 1)
+    
+
+}
+.comments-ul li div:first-child{
+  margin-right: 5px; 
+}
+.starTxt-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: space-between;
+    column-gap: 5px;
+    
+}
+
+.stars-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.com-name{
+    color: #424242;
+    font-weight: 600;
+}
+
+.commentTxt{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.commentTxt p:first-child{
+    color: #424242;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.looktoo{
+    margin: 30px 0;
+}
+.it-ul li{
+    position: relative;
+}
+.moneystart, .moneyend{
+position: absolute;
+color: #424242 ;
+}
+
+
+@media screen and (min-width: 564px){
+    .moneystart{
+        left: 59%;
+    }
+
+    .moneyend{
+         left: 91%;
+    }
+    .char-item li{
+        display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       column-gap: 30px;
+       padding: 5px 0 ;
+       font-size: 0.9em;
+       
+       
+    }
+    .char-item li::after{
+        content: "";
+        border-bottom: 1px solid #BDBDBD;
+        grid-column: 1/4;
+    }
+    
+    .char-item li p:first-child{
+        font-weight: 600;
+        color: #424242;
+        grid-column: 1/3;
+    }
+    
+    .char-item li p:last-child{
+        
+        grid-column: 3/4;
+    }
+
+    .item-order{
+        margin: 20px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        position: relative;
+    }
+
+    .item-order p{
+        font-weight: 600;
+        color: #424242;
+       
+    }
+    
+    .mon{
+        position: absolute;
+        left: 8%;
+    }
+
+    
+    .item-count{
+        position: relative;
+        max-width: fit-content;
+    }
+
+    .order-count{
+        width: 6rem;
+        text-align: center;
+    }
+
+    .order-count::placeholder{
+      text-align: center; 
+    }
+
+    .minus{
+        position: absolute;
+        font-size: 1.5rem;
+        top:2%;
+        left: 10%;
+        font-weight: 400;
+        color: #BDBDBD;
+        cursor: pointer;
+
+    }
+
+    .plus{
+        position: absolute;
+        font-size: 1.5rem;
+        top:2%;
+        right: 10%;
+        font-weight: 400;
+        color: #BDBDBD;
+        cursor: pointer;
+    }
+
+    .order-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-column: 3/5;
+    }
+
+    
+    
+}
+
+@media screen and (min-width: 610px){
+    .moneystart{
+        left: 61%;
+        
+    }
+    .moneyend{
+        left: 92%;
+   }
+}
+
+@media screen and (min-width: 810px){
+    .moneystart{
+        left: 59.5%;
+        
+    }
+    .moneyend{
+        left: 86.5%;
+   }
+    .comments-ul{
+       
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 960px){
+    p{
+        font-size: 16px;
+    }
+    .item{
+        align-items:flex-start;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .itemIMG{
+        max-width: 90%;
+        margin-top: 50px;
+    }
+
+    .heading{
+        text-align:left;
+        
+    }
+    .order-btn button{
+        max-width: 80%;
+    }
+    .comments-ul{
+       
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .comments-ul{
+       
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
